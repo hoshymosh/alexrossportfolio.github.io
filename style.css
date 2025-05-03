@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+:root {
+    --darkPink: #6c2b47;
+    --pink: #d36c92;
+    --lightPink: #f8c6d8;
+    --green: #A5B68D;
+    --lightGreen: #C1CFA1;
+    --brown: #B99470;
+    --dark: #202020;
+    --light: #f5eeee;
+}
+
+.rotate-icon {
+    display: inline-block;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.profile-img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    border: var(--green) 5px solid;
+}
+
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.gallery-img {
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    border: var(--lightGreen) 5px solid;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 240, 245, 0.75);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    border: var(--darkPink) 5px solid;
+}
+
+#caption {
+    color: #d36c92;
+    font-size: 1.2rem;
+    margin: 1rem;
+    padding: 5px;
+    background-color: var(--light);
+    border: var(--pink) 5px solid;
+    border-radius: 15px;
+}
+
+body {
+    background-color: #fff0f5;
+    background-image: url(https://img.freepik.com/free-vector/light-pink-heart-pattern_53876-67663.jpg);
+    color: #4a4a4a;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main-box {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--light);
+    border-radius: 15px;
+    border: 5px solid var(--green);
+    box-shadow: 0 0 20px rgba(211, 108, 146, 0.1);
+}
+
+.navbar {
+    background-color: var(--lightPink);
+    border-radius: 15px;;
+}
+
+.navbar a {
+    background-color: var(--pink);
+    border-radius: 15px;
+    border: var(--lightPink) 5px solid;
+    color: var(--light);
+ 
+}
+
+.navbar a:hover {
+    color: var(--darkPink);
+    background-color: var(--light);
+}
+
+
+.navbar-toggler-icon {
+    color: var(--darkPink);
+}
+
+h1,
+h2 {
+    color: var(--pink);
+    font-family: "Berkshire Swash", serif;
+}
+
+a {
+    color: #f7a1c4;
+}
+
+a:hover {
+    color: var(--pink);
+}
+
+footer {
+    background-color: var(--lightPink);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 15px;
+    color: var(--darkPink);
+    border-top: 1px solid #f7a1c4;
+}
+p{
+    color: var(--dark);
+}
